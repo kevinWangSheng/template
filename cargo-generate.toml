@@ -1,0 +1,10 @@
+# cargo-generate.toml
+
+[template]
+# 要在生成项目时完全排除、不进行任何变量替换的文件列表
+# cargo-generate 会直接复制这些文件
+exclude = ["cliff.toml"]
+
+# 你可能还有其他 cargo-generate 配置，例如 include, placeholders 等
+# 例如:
+# placeholders = { "project-name" = { type = "string", prompt = "Project name" } }
